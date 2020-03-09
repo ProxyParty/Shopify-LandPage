@@ -1,0 +1,794 @@
+#homescreen {
+  height: 60vh;
+  background: #448bb9;
+  .logo {
+    display: flex;
+    justify-content: center;
+    img {
+      padding: 20px 0 30px 0;
+      width: 280px;
+    }
+  }
+  .text {
+    color: white;
+    h2 {
+      font-size: 60px;
+      text-align: center;
+      font-weight: 500;
+      padding-bottom: 10px;
+    }
+    h3 {
+      font-size: 37px;
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+  .input-email {
+    display: flex;
+    justify-content: center;
+    padding-top: 11rem;
+    .enter-email {
+      border: none;
+      height: 60px;
+      width: 27rem;
+      font-size: 27px;
+      padding-left: 20px;
+      border-radius: 2px;
+    }
+    .getstarted-btn {
+      font-weight: 600;
+      font-size: 27px;
+      padding: 16px 42px;
+      width: 14rem;
+      margin-left: 30px;
+      border-radius: 2px;
+      background: #2b2f5e;
+      color: white;
+    }
+  }
+  .small-text {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 20px;
+  }
+}
+
+#cover-photo {
+  .home-photo {
+    img {
+      height: auto;
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+#scrollscreen {
+  padding-top: 8rem;
+  .logo-area {
+    padding: 8rem;
+    .divider-one {
+      margin: 0;
+      padding: 2px 0 0 0;
+      background: #979797;
+    }
+    .logos {
+      display: flex;
+      justify-content: center;
+      img {
+        padding: 20px 0;
+      }
+    }
+    .divider-two {
+      margin: 0;
+      padding: 2px 0 0 0;
+      background: #979797;
+    }
+  }
+  .content-area {
+    display: flex;
+    justify-content: center;
+    img {
+      padding-top: 8rem;
+      width: 20rem;
+      padding-bottom: 5rem;
+      cursor: pointer;
+      &:hover {
+        transition: transform 0.3s ease-out;
+        transform: translate3d(0, -100px, 0);
+      }
+    }
+    .pricing-slide {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  .quote-area {
+    text-align: center;
+    h3 {
+      font-weight: 600;
+      font-size: 32px;
+    }
+    p {
+      padding-top: 27px;
+      text-transform: uppercase;
+      font-weight: 900;
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+  .divider-three {
+    margin: 27px 23rem 0 23rem;
+    padding: 2px 0 0 0;
+    background: #979797;
+  }
+  .free-trial {
+    text-align: center;
+    h2 {
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+      font-weight: 500;
+      font-size: 42px;
+    }
+  }
+  .started-btn {
+    text-align: center;
+    padding-bottom: 5rem;
+    span {
+      background: #2b2f5e;
+      color: white;
+      padding: 15px 80px;
+      border-radius: 3px;
+      font-size: 29px;
+      font-weight: 600;
+      vertical-align: middle;
+    }
+  }
+}
+
+#footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  background: #448bb9;
+  color: white;
+  .links {
+    float: left;
+    ul li {
+      display: inline-block;
+      line-height: 50px;
+      margin: 0 5px;
+    }
+    a {
+      color: white;
+    }
+  }
+  .socials {
+    font-size: 45px;
+    text-align: right;
+    ul a li {
+      display: inline;
+      margin: 0 1rem;
+      color: white;
+      i {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+// 4K Monitors
+@media only screen and (min-width: 1921px) {
+  #homescreen {
+    height: 30vh !important;
+    .logo {
+      img {
+        width: 30rem;
+      }
+    }
+    .text {
+      h2 {
+        font-size: 6rem;
+      }
+      h3 {
+        font-size: 4rem;
+      }
+    }
+    .input-email {
+      padding-top: 4rem;
+      .enter-email {
+        height: 60px;
+        width: 40rem;
+        font-size: 30px;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        vertical-align: middle;
+      }
+      .getstarted-btn {
+        padding: 0;
+        padding-left: 42px;
+        padding-top: 14px;
+        height: 60px;
+        width: 15rem;
+        margin-left: 10px;
+        span {
+          display: block;
+          font-size: 31px;
+        }
+      }
+    }
+    .small-text {
+      padding-top: 9px;
+      p {
+        font-size: 28px;
+      }
+    }
+  }
+  #cover-photo {
+    .home-photo {
+      img {
+        height: auto !important;
+      }
+    }
+  }
+  #scrollscreen {
+    padding: 0rem;
+    .logo-area {
+      padding: 8rem 0 !important;
+      img {
+        width: 25rem !important;
+      }
+      .divider-one {
+        padding: 2px 0 0 0;
+        margin: 0 30rem;
+      }
+      .divider-two {
+        padding: 2px 0 0 0;
+        margin: 0 40rem;
+      }
+    }
+    .content-area {
+      .pricing-slide {
+        margin: 0 30px;
+      }
+      img {
+        width: 30rem !important;
+        float: right;
+        clear: right;
+        display: inline-block;
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+        &:hover {
+          transform: translate3d(0, -40px, 0);
+        }
+      }
+    }
+    .quote-area {
+      h3 {
+        padding: 0 40px;
+        font-size: 45px;
+      }
+      p {
+        padding-top: 1rem;
+        font-size: 25px;
+      }
+    }
+    .divider-three {
+      padding: 2px 0 0 0;
+      margin: 2rem 30rem 0;
+    }
+    .free-trial {
+      h2 {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        font-size: 55px;
+      }
+    }
+    .started-btn {
+      padding-bottom: 6rem;
+      span {
+        padding: 15px 60px;
+        font-size: 31px;
+      }
+    }
+  }
+  #footer {
+    padding: 50px 1rem !important;
+    vertical-align: middle;
+    .links {
+      float: left;
+      font-size: 30px !important;
+    }
+    .socials {
+      text-align: right;
+      ul a li {
+        margin: 0 10px !important;
+        i {
+          font-size: 60px !important;
+        }
+      }
+    }
+  }
+}
+
+/* HD Monitor/iPad Pro */
+@media only screen and (min-width: 960px) and (max-width: 1920px) {
+  #homescreen {
+    height: 33vh !important;
+    .logo {
+      img {
+        width: 180px;
+      }
+    }
+    .text {
+      h2 {
+        font-size: 40px;
+      }
+      h3 {
+        font-size: 25px;
+      }
+    }
+    .input-email {
+      padding-top: 4rem;
+      .enter-email {
+        height: 20px;
+        width: 20rem;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        vertical-align: middle;
+      }
+      .getstarted-btn {
+        padding: 0;
+        padding-left: 20px;
+        padding-top: 14px;
+        height: 40px;
+        width: 7rem;
+        margin-left: 10px;
+        span {
+          display: block;
+          font-size: 14px;
+        }
+      }
+    }
+    .small-text {
+      padding-top: 9px;
+      p {
+        font-size: 11px;
+      }
+    }
+  }
+  #cover-photo {
+    .home-photo {
+      img {
+        height: auto !important;
+      }
+    }
+  }
+  #scrollscreen {
+    padding: 0rem;
+    .logo-area {
+      padding: 3rem 0;
+      img {
+        width: 10rem !important;
+      }
+      .divider-one {
+        padding: 1px 0 0 0;
+        margin: 0 4rem;
+      }
+      .divider-two {
+        padding: 1px 0 0 0;
+        margin: 0 10rem;
+      }
+    }
+    .content-area {
+      .pricing-slide {
+        margin: 0 5px;
+      }
+      img {
+        width: 15rem !important;
+        float: right;
+        clear: right;
+        display: inline-block;
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+        &:hover {
+          transform: translate3d(0, -40px, 0);
+        }
+      }
+    }
+    .quote-area {
+      h3 {
+        padding: 0 40px;
+        font-size: 25px;
+      }
+      p {
+        padding-top: 1rem;
+        font-size: 15px;
+      }
+    }
+    .divider-three {
+      padding: 1px 0 0 0;
+      margin: 0.7rem 2rem 0;
+    }
+    .free-trial {
+      h2 {
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+        font-size: 28px;
+      }
+    }
+    .started-btn {
+      padding-bottom: 3rem;
+      span {
+        padding: 15px 60px;
+        font-size: 20px;
+      }
+    }
+  }
+  #footer {
+    padding: 20px 1rem !important;
+    vertical-align: middle;
+    .links {
+      float: left;
+      font-size: 20px !important;
+    }
+    .socials {
+      text-align: right;
+      ul a li {
+        margin: 0 10px !important;
+        i {
+          font-size: 40px !important;
+        }
+      }
+    }
+  }
+}
+/* Mid-sizes */
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+  #homescreen {
+    height: 32vh !important;
+    .logo {
+      img {
+        width: 180px;
+      }
+    }
+    .text {
+      h2 {
+        font-size: 40px;
+      }
+      h3 {
+        font-size: 25px;
+      }
+    }
+    .input-email {
+      padding-top: 4rem;
+      .enter-email {
+        height: 20px;
+        width: 20rem;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        vertical-align: middle;
+      }
+      .getstarted-btn {
+        padding: 0;
+        padding-left: 20px;
+        padding-top: 14px;
+        height: 40px;
+        width: 7rem;
+        margin-left: 10px;
+        span {
+          display: block;
+          font-size: 14px;
+        }
+      }
+    }
+    .small-text {
+      padding-top: 9px;
+      p {
+        font-size: 11px;
+      }
+    }
+  }
+  #cover-photo {
+    .home-photo {
+      img {
+        height: auto !important;
+      }
+    }
+  }
+  #scrollscreen {
+    padding: 0rem;
+    .logo-area {
+      padding: 3rem 0;
+      img {
+        width: 8rem !important;
+      }
+      .divider-one {
+        padding: 1px 0 0 0;
+        margin: 0 2rem;
+      }
+      .divider-two {
+        padding: 1px 0 0 0;
+        margin: 0 7rem;
+      }
+    }
+    .content-area {
+      .pricing-slide {
+        margin: 0 5px;
+      }
+      img {
+        width: 13rem !important;
+        float: right;
+        clear: right;
+        display: inline-block;
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+        &:hover {
+          transform: translate3d(0, -40px, 0);
+        }
+      }
+    }
+    .quote-area {
+      h3 {
+        padding: 0 40px;
+        font-size: 20px;
+      }
+      p {
+        padding-top: 1rem;
+        font-size: 12px;
+      }
+    }
+    .divider-three {
+      padding: 1px 0 0 0;
+      margin: 0.7rem 2rem 0;
+    }
+    .free-trial {
+      h2 {
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+        font-size: 23px;
+      }
+    }
+    .started-btn {
+      padding-bottom: 3rem;
+      span {
+        padding: 10px 40px;
+        font-size: 17px;
+      }
+    }
+  }
+  #footer {
+    padding: 5px 1rem;
+    vertical-align: middle;
+    .links {
+      float: left;
+      font-size: 15px !important;
+    }
+    .socials {
+      text-align: right;
+      ul a li {
+        margin: 0 10px !important;
+        i {
+          font-size: 30px !important;
+        }
+      }
+    }
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  #homescreen {
+    height: 39vh;
+    .logo {
+      img {
+        width: 145px;
+      }
+    }
+    .text {
+      h2 {
+        font-size: 27px;
+      }
+      h3 {
+        font-size: 16px;
+      }
+    }
+    .input-email {
+      padding-top: 4rem;
+      .enter-email {
+        height: 20px;
+        width: 12rem;
+        font-size: 12px;
+        padding-left: 10px;
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
+        vertical-align: middle;
+      }
+      .getstarted-btn {
+        padding: 0;
+        padding-left: 14px;
+        padding-top: 7px;
+        height: 26px;
+        width: 5.5rem;
+        margin-left: 10px;
+        span {
+          display: block;
+          font-size: 12px;
+        }
+      }
+    }
+    .small-text {
+      padding-top: 9px;
+      p {
+        font-size: 9px;
+      }
+    }
+  }
+  #cover-photo {
+    .home-photo {
+      img {
+        height: auto;
+      }
+    }
+  }
+  #scrollscreen {
+    padding: 0rem;
+    .logo-area {
+      padding: 3rem 0;
+      img {
+        width: 70px;
+      }
+      .divider-one {
+        padding: 1px 0 0 0;
+        margin: 0 1.5rem;
+      }
+      .divider-two {
+        padding: 1px 0 0 0;
+        margin: 0 3.5rem;
+      }
+    }
+    .content-area {
+      .pricing-slide {
+        margin: 0 5px;
+      }
+      img {
+        width: 7rem;
+        float: right;
+        clear: right;
+        display: inline-block;
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+        &:hover {
+          transform: translate3d(0, -40px, 0);
+        }
+      }
+    }
+    .quote-area {
+      h3 {
+        padding: 0 40px;
+        font-size: 14px;
+      }
+      p {
+        padding-top: 1rem;
+        font-size: 9px;
+      }
+    }
+    .divider-three {
+      padding: 1px 0 0 0;
+      margin: 0.7rem 1.5rem 0;
+    }
+    .free-trial {
+      h2 {
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+        font-size: 20px;
+      }
+    }
+    .started-btn {
+      padding-bottom: 3rem;
+      span {
+        padding: 10px 40px;
+        font-size: 17px;
+      }
+    }
+  }
+  #footer {
+    padding: 5px 1rem;
+    vertical-align: middle;
+    .links {
+      float: left;
+      font-size: 10px;
+    }
+    .socials {
+      text-align: right;
+      ul a li {
+        margin: 0 0px;
+        i {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  #homescreen {
+    height: 39vh;
+  }
+  #scrollscreen {
+    .logo-area {
+      padding: 3rem 0;
+      img {
+        width: 70px;
+      }
+    }
+    .content-area {
+      img {
+        width: 8rem;
+        padding-bottom: 2.5rem;
+      }
+    }
+  }
+  #footer {
+    padding: 5px 1rem;
+    vertical-align: middle;
+    .links {
+      float: left;
+      font-size: 9px;
+    }
+    .socials {
+      text-align: right;
+      ul a li {
+        margin: 0 0px;
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+// iPhone 5/SE
+@media only screen and (max-width: 360px) {
+  #homescreen {
+    height: 50vh;
+  }
+  #scrollscreen {
+    .logo-area {
+      padding: 3rem 0;
+      img {
+        width: 60px;
+      }
+    }
+    .content-area {
+      img {
+        width: 6.2rem;
+        padding-bottom: 2.5rem;
+      }
+    }
+  }
+  #footer {
+    padding: 5px 1rem;
+    vertical-align: middle;
+    .links {
+      float: left;
+      font-size: 9px;
+    }
+    .socials {
+      text-align: right;
+      ul a li {
+        margin: 0 0px;
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
